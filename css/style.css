@@ -27,7 +27,7 @@ header{
     width: 100%;
     align-items: center;
     justify-content: space-between;
-
+   padding: 0 1rem;
         nav{
             ul{
                 display: flex;
@@ -67,10 +67,34 @@ list-style: none;
 }
 
 .mobile-nav{
-        display: none;
+  
+ position: fixed;
+ height: 80vh;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ z-index: 1000;
+ background: rgba(0, 0, 0, 0.7);
+ display: flex;
+ border-radius: 25px 25px 0 0 ;
+ backdrop-filter: blur(10px);
+ align-items: center;
+ justify-content: center;
+ ul{
+    display: flex;
+    flex-direction: column;
+ }
 
+}
 
-    }
+#close_mob_nav{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: none;
+    outline: none;
+    border: none;
+}
 
     #mobile-btn{
     display: none;
