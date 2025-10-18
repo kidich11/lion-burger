@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(./btn.css);
 *{
 margin: 0;
 padding: 0;
@@ -75,7 +76,7 @@ list-style: none;
  width: 100%;
  z-index: 1000;
  background: rgba(0, 0, 0, 0.7);
- display: flex;
+ display: none;
  border-radius: 25px 25px 0 0 ;
  backdrop-filter: blur(10px);
  align-items: center;
@@ -99,6 +100,8 @@ list-style: none;
     #mobile-btn{
     display: none;
    }
+
+
 .main_section{
     width: 100%;
     display: flex;
@@ -121,9 +124,91 @@ list-style: none;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
 
+}
 
+.menu_item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 250px;
+    height: 130px;
+    background-color: rgb(219, 181, 11);
+    border-radius: 15px;
+   
+    img{
+        width: 130px;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    button{
+        background: red;
+        outline: none;
+        border: none;
+        color: white;
+        border-radius: 15px;
+        padding: 3.5px;
+        width: 100px;
+        cursor: pointer;
+    }
+}
+
+.menu_items{
+    display: flex;
+    gap: 20px;
+    max-width: 790px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items:center ;
+    justify-content: center;
+}
+
+
+
+.main-menu{
+    min-height: 80vh;
+    height: auto;
+    width: 100%;
+    background: rgb(151, 36, 36);
+    padding-top: 1rem;  
+    padding-bottom: 1rem;
+    h2{
+        margin-bottom: 2rem;
+        color: white;
+        font-family: 'Poppins';
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.footer{
+    height: 400px;
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+   
+}
+
+.footer_nav{
+    font-family: 'Poppins';
+    & ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @keyframes scale{
@@ -149,7 +234,9 @@ list-style: none;
    }
 
      
-    
+    .footer{
+        flex-direction: column;
+    }
    .desktop-nav{
  
     display: none;
@@ -160,3 +247,5 @@ list-style: none;
    }
 
 }
+
+
