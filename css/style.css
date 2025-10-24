@@ -14,7 +14,7 @@ box-sizing: border-box;
 }
 
 #root{
-    background: linear-gradient(120deg,brown,red,orangered);
+    background:#f4eadb;
     width: 100%;
     margin: 0 auto;
     min-height: 100vh;
@@ -25,9 +25,17 @@ box-sizing: border-box;
 header{
     display: flex;
     height: 100px;
-    width: 100%;
+   
+    width: 960px;
+
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    background:#fbf5eb;
+    border-radius: 30px;
+    top: 10px;
+    left: calc(50% - 480px);
+    z-index: 1000;
    padding: 0 1rem;
         nav{
             ul{
@@ -37,7 +45,7 @@ header{
                 font-family: "Poppins", sans-serif;
                     li{
                      font: size 0.8rem;
-                    color: white;
+                    color:#502314;
                     }
             }
 
@@ -110,7 +118,7 @@ list-style: none;
     height: calc(100vh - 100px);
     min-height: fit-content;
     h2{
-        color:white;
+        color:#502314;
         font-family: "Poppins", sans-serif;
         position: absolute;
         top: 0;
@@ -135,7 +143,7 @@ list-style: none;
     gap: 1rem;
     width: 250px;
     height: 130px;
-    background-color: rgb(219, 181, 11);
+    background-color:#fbf5eb;
     border-radius: 15px;
    
     img{
@@ -151,7 +159,7 @@ list-style: none;
     }
 
     button{
-        background: red;
+        background: #502314;
         outline: none;
         border: none;
         color: white;
@@ -178,12 +186,12 @@ list-style: none;
     min-height: 80vh;
     height: auto;
     width: 100%;
-    background: rgb(151, 36, 36);
+    background:#f4eadb;
     padding-top: 1rem;  
     padding-bottom: 1rem;
     h2{
         margin-bottom: 2rem;
-        color: white;
+        color: #502314;
         font-family: 'Poppins';
         font-size: 2rem;
         text-align: center;
@@ -192,12 +200,16 @@ list-style: none;
 
 .footer{
     height: 400px;
+    max-width: 1080px;
+    min-width: 375px;
     width: 100%;
     background: black;
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: white;
+    margin: 0 auto;
+    border-radius: 50px 50px 0 0 ;
 
    
 }
@@ -217,6 +229,14 @@ list-style: none;
     }
     100%{
         transform: scale(1);
+    }
+}
+
+@media screen and (max-width:960px){
+    header{
+        width: 100%;
+        left: 0;
+        top: 10px;
     }
 }
 
