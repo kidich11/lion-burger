@@ -6,6 +6,12 @@ padding: 0;
 box-sizing: border-box;
 }
 
+html{
+scroll-behavior: smooth;
+
+
+}
+
 .container{
 
     max-width: 1200px;
@@ -25,13 +31,12 @@ box-sizing: border-box;
 header{
     display: flex;
     height: 100px;
-   
     width: 960px;
-
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    background:#fbf5eb;
+    background:#fbf5ebb2;
+    backdrop-filter: blur(10px);
     border-radius: 30px;
     top: 10px;
     left: calc(50% - 480px);
@@ -76,7 +81,6 @@ list-style: none;
 }
 
 .mobile-nav{
-  
  position: fixed;
  height: 80vh;
  bottom: 0;
@@ -89,9 +93,14 @@ list-style: none;
  backdrop-filter: blur(10px);
  align-items: center;
  justify-content: center;
+font-family: 'Poppins';
  ul{
     display: flex;
     flex-direction: column;
+    a{
+        color: white;
+
+    }
  }
 
 }
@@ -222,6 +231,31 @@ list-style: none;
         align-items: center;
     }
 }
+
+.pop-btn{
+width: 50px;
+height: 50px;
+border-radius: 50px;
+background: #502314;
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+bottom: 1rem;
+right: 1rem;
+z-index: 1000;
+
+}
+.desktop-nav{
+a{
+color: black;
+
+
+}
+
+
+}
+
 
 @keyframes scale{
     0%{
